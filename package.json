@@ -1,0 +1,32 @@
+{
+  "name": "my-app",
+  "author": {
+    "name": "Shyam. M",
+    "description": "This is a complete fullstack Node+Rust+JSX+Webworkers+ServiceWorkers+Cluster+WorkerThreads HONO-SSR starter"
+  },
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build:css": "tailwindcss -i ./src/styles/styles.css -o ./public/styles.css --minify",
+    "watch:css": "tailwindcss -i ./src/styles/styles.css -o ./public/styles.css --watch",
+    "addons": "cd @bunvader/rustacean && npm i && npm run build",
+    "build": "node esbuild.config.cjs && npm run build:css",
+    "start": "node dist/bundle.main.js --max-old-space-size=512"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.13.1",
+    "autoprefixer": "^10.4.20",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "figlet": "^1.8.0",
+    "hono": "^4.6.3",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1"
+  },
+  "private": true,
+  "packageManager": "npm@10.8.0"
+}
