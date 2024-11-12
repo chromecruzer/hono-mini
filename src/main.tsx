@@ -2,6 +2,7 @@
 
 import { render } from 'hono/jsx/dom'
 import { App } from './App'
+import '../style.css';  // Import your CSS
 
 // Select the root element from the HTML
 const root = document.getElementById('root')

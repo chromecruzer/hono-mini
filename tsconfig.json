@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
       "jsx": "react-jsx",
-      "jsxImportSource": "hono/jsx/dom"
+      "jsxImportSource": "hono/jsx/dom",
+      "moduleResolution": "node16",
     }
   }
